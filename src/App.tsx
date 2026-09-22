@@ -1,6 +1,7 @@
 // import SimpleAnimatedLogin from './loginpage'
 import React, { useState } from 'react';
 import { User, Lock, Eye, EyeOff, ArrowRight, Sparkles } from 'lucide-react';
+import ClipCutNavbar from './components/navbar';
 
 function App() {
    const [identifier, setIdentifier] = useState(''); // Handles Email or Username
@@ -20,6 +21,7 @@ function App() {
     };
   return (
     <>
+    {/* <ClipCutNavbar /> */}
       <div className="min-h-screen bg-slate-950 flex items-center justify-center p-4 relative overflow-hidden font-sans">
       {/* Ambient Animated Background Lights */}
       <div className="absolute -top-40 -left-40 w-96 h-96 bg-purple-600/25 rounded-full blur-3xl animate-pulse pointer-events-none" />

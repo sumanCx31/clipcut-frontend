@@ -6,6 +6,7 @@ import { AuthProvider } from "../context/auth.context";
 import LoginPage from "../loginpage";
 import RegisterPage from "../registerpage";
 import NotFoundPage from "../not-found-page";
+import ClipCutExplorePage from "../explore.page";
 
 
 
@@ -17,6 +18,10 @@ const routerConfig = createBrowserRouter([
       { index: true, Component: LoginPage },
       { path: "register", Component: RegisterPage },
     ],
+  },
+  {
+    path:"/explore",
+    Component:ClipCutExplorePage
   },
 
   {

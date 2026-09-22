@@ -1,13 +1,14 @@
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { FileQuestion, Home, ArrowLeft, Search, Scissors, ShieldAlert } from 'lucide-react';
+import ClipCutNavbar from './components/navbar';
 
 export default function NotFoundPage(): React.ReactElement {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex items-center justify-center p-4 relative overflow-hidden font-sans">
-      
+      <ClipCutNavbar />
       {/* Background Animated Ambient Lights */}
       <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[120px] animate-pulse pointer-events-none" />
       <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] animate-pulse delay-1000 pointer-events-none" />
